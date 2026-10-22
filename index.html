@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+</head>
+
+
+<body>
+    <h1>Calcola Tariffa</h1>
+    <form id="biglietto-form">
+        <input type="number" id="chilometri" required>
+
+        <select id="fascia-eta">
+            <option value="junior">Minorenne</option>
+            <option value="standard" selected>Maggiorenne</option>
+            <option value="senior">Over 65</option>
+        </select>
+        <button type="submit" id="calcola"> Calcola</button>
+        <button type="reset" id="calcola"> Reset</button>
+    </form>
+    <div id="costo-biglietto"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
